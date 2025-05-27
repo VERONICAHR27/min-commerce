@@ -1,20 +1,13 @@
-import ProductCard from './components/ProductCard';
-import {products} from './models/products';
+import ProductList from './components/ProductList';
+import { products } from './models/products';
 
 function App() {  
-  return (
-    <main className='p-12'>
-      <h1 className='text-4xl'>Min-Comerce</h1>
-      <section className='flex justify-start'>
-          <ProductCard {...products[0]} />
-          <ProductCard {...products[1]} />
-          <ProductCard {...products[2]} />
-          <ProductCard {...products[3]} />
-          <ProductCard {...products[4]} />
-          <ProductCard {...products[5]} />
-      </section>
-    </main>
-  )
+    return (
+        <main className='container mx-auto p-8'>
+            <h1 className='text-4xl font-bold mb-8 text-gray-800'>Min-Commerce</h1>
+            <ProductList products={products} />
+        </main>
+    );
 }
 
 export default App

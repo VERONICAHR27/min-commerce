@@ -3,9 +3,9 @@ import { type Product } from "../models/products";
 export default function ProductCard(props: Product) {
     return (
         <div className="relative bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 p-4 flex flex-col h-full">
-            {/* Sale Badge */}
+            {/* Sale Badge - Ajustado z-index y posición */}
             {props.onSale && (
-                <span className="absolute top-2 right-2 bg-rose-100 text-rose-600 text-xs font-medium px-2 py-1 rounded-full">
+                <span className="absolute top-2 right-2 bg-rose-100 text-rose-600 text-xs font-medium px-2 py-1 rounded-full z-10">
                     On Sale
                 </span>
             )}
