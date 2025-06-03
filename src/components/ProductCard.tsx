@@ -1,6 +1,9 @@
 import { type Product } from "../models/products";  
+import { useCart } from "../context/CartContext";
 
 export default function ProductCard(props: Product) {
+    const { addToCart } = useCart();
+
     return (
         <div className="relative bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 p-4 flex flex-col h-full">
             {/* Sale Badge - Ajustado z-index y posición */}
@@ -33,6 +36,13 @@ export default function ProductCard(props: Product) {
                         ${props.price.toFixed(2)}
                     </p>
                 </div>
+
+                <button 
+                    onClick={() => addToCart(props)}
+                    className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
+                >
+                    Agregar al carrito
+                </button>
             </div>
         </div>
     );

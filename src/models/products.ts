@@ -1,30 +1,30 @@
 export interface Product {
-  id: string;
-  title: string;
-  price: number;
-  imageUrl: string;
-  category: string;
-  onSale?: boolean;
+    id: string;
+    title: string;
+    price: number;
+    imageUrl: string;
+    category: string;
+    onSale?: boolean;
 }
 
 export const products: Array<Product> = [
   {
     id: '0',
-    title: 'Zapatillas Urbanas',
+    title: 'Zapatillas Classic Old Skool',
     price: 179.99,
-    imageUrl: 'https://vans.com.pe/cdn/shop/files/VN000D3HY28_HERO.png?v=1698698660&width=493',
+    imageUrl: 'https://vans.com.pe/cdn/shop/files/VN000D3HY28_HERO.png',
     category: 'Calzado',
     onSale: true
   },
-   {
+  {
     id: '1',
-    title: 'Zapatillas Urbanas',
-    price: 179.99,
-    imageUrl: 'https://vans.com.pe/cdn/shop/files/VN000D3HY28_HERO.png?v=1698698660&width=493',
+    title: 'Zapatillas Authentic',
+    price: 159.99,
+    imageUrl: 'https://falabella.scene7.com/is/image/FalabellaPE/882257227_1',
     category: 'Calzado',
-    onSale: true
+    onSale: false
   },
-   {
+  {
     id: '2',
     title: 'Zapatillas Urbanas',
     price: 179.99,
